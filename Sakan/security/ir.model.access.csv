@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+Sakan.access_rooms,access_rooms,Sakan.model_rooms,,1,1,1,1
+Sakan.access_student,access_student,Sakan.model_student,,1,1,1,1
+Sakan.access_unit,access_unit,Sakan.model_unit,,1,1,1,1
+Sakan.access_university,access_university,Sakan.model_university,,1,1,1,1

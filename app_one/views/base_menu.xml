@@ -1,0 +1,17 @@
+<odoo>
+    <menuitem
+         id="real_estate"
+         name="First"
+         web_icon="app_one.static/description/message.png"
+    />
+    <menuitem
+         id="properties_menu"
+         name="Properties"
+         parent="real_estate"
+    />
+    <menuitem
+         id="configration_menu"
+         name="Configration"
+         parent="real_estate"
+    />
+</odoo>

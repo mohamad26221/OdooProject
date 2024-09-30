@@ -1,0 +1,30 @@
+<odoo>
+
+
+    <menuitem
+         id="base_menu"
+         name="السكن الجامعي"
+    />
+    <menuitem
+         id="university_menu"
+         name="الجامعات"
+         parent="base_menu"
+    />
+    <menuitem
+         id="unit_menu"
+         name="الوحدات"
+         parent="base_menu"
+    />
+    <menuitem
+         id="room_menu"
+         name="الغرف السكنية"
+         parent="base_menu"
+    />
+    <menuitem
+         id="student_menu"
+         name="الطلاب"
+         parent="base_menu"
+    />
+
+
+</odoo>
