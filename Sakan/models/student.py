@@ -1,6 +1,4 @@
-from odoo import models, fields,api
-
-
+from odoo import models, fields, api, exceptions
 
 
 class Student(models.Model):
@@ -21,3 +19,8 @@ class Student(models.Model):
         ('unique_name','unique("email")','the email is exist!'),
         ('unique_name','unique("phone")','the phone is exist!'),
     ]
+    @api.constrains('room')
+    def _check_room_capacity(self):
+        for student in self:
+            if student.room and len(student.room.student_ids) > 3:
+                raise exceptions.ValidationError("الغرفة ممتلئة لا يمكن اضافة المزيد من الطلاب")
