@@ -11,6 +11,7 @@
         'views/unit_view.xml',
         'views/rooms_view.xml',
         'views/student_view.xml',
+        'views/sale_order_view.xml',
     ],
     'installable': True,
     'application': True,

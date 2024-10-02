@@ -5,15 +5,15 @@ class Student(models.Model):
     _name = 'student'
     _description = 'student Description'
 
-    name = fields.Char(required=True,string="اسم الطالب")
-    email = fields.Char(string="البريد الالكتروني", required=True)
-    father_name = fields.Char(string="اسم الاب")
-    last_name = fields.Char(string="الكنية")
-    phone = fields.Char(string="رقم الموبايل", required=True)
-    section = fields.Char(string="الاختصاص")
-    unit= fields.Many2one('unit',string="الوحدة")
-    room= fields.Many2one('rooms',string="الغرفة")
-    university= fields.Many2one('university',string="الجامعة")
+    name = fields.Char(required=True)
+    email = fields.Char( required=True)
+    father_name = fields.Char()
+    last_name = fields.Char()
+    phone = fields.Char( required=True)
+    section = fields.Char()
+    unit= fields.Many2one('unit')
+    room= fields.Many2one('rooms')
+    university= fields.Many2one('university')
 
     _sql_constraints = [
         ('unique_name','unique("email")','the email is exist!'),
