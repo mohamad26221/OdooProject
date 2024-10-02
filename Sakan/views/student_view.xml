@@ -5,7 +5,7 @@
         <field name="name">student view tree</field>
         <field name="model">student</field>
         <field name="arch" type="xml">
-            <tree >
+            <tree class="header_custom">
                 <field name="name"/>
                 <field name="email"/>
                 <field name="father_name"/>
