@@ -6,6 +6,6 @@ class SaleOrder(models.Model):
 
 
     def action_confirm(self):
-        res = super(SaleOrder, self).action_confirm() #now
+        res = super(SaleOrder, self).action_confirm() #nowwwww
         print("inside action confirm method")
         return res
