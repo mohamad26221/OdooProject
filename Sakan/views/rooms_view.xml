@@ -45,14 +45,14 @@
 
 
     <record id="rooms_action" model="ir.actions.act_window">
-        <field name="name">الغرف</field>
+        <field name="name">Rooms</field>
         <field name="res_model">rooms</field>
     </record>
 
 
     <menuitem
             id="rooms_menu_item"
-            name="عرض الغرف"
+            name="Show Rooms"
             parent="room_menu"
             action="rooms_action"
     />

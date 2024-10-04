@@ -3,18 +3,20 @@ from odoo import models, fields, api
 
 class Rooms (models.Model):
     _name = 'rooms'
-    _description = 'rooms Description'
+    _description = 'Room'
+    # _rec_name = 'name'
 
-    name = fields.Char(string="رقم الغرفة", required=True)
-    floor = fields.Char(string="الطابق")
+    name = fields.Char(required=True)
+    floor = fields.Char()
+    active = fields.Boolean(default=True)
     state= fields.Selection([
-        ('empty','فارغة'),
-        ('available','متاحة'),
-        ('unavailable','ممتلئة'),
-        ],string="حالة الغرفة")
-    unit = fields.Many2one('unit',string="الوحدة")
+        ('empty','Empty'),
+        ('available','Available'),
+        ('full','Full'),
+        ])
+    unit = fields.Many2one('unit')
     student_ids = fields.One2many('student', 'room')
-    student_count = fields.Integer(string="عدد الطلاب", compute='_compute_student_count')
+    student_count = fields.Integer(compute='_compute_student_count')
 
     @api.depends('student_ids')
     def _compute_student_count(self):
@@ -25,7 +27,7 @@ class Rooms (models.Model):
             elif 0 < room.student_count < 3:
                 room.state = 'available'
             elif room.student_count >= 3:
-                room.state = 'unavailable'
+                room.state = 'full'
 
     def action_empty(self):
         for rec in self:

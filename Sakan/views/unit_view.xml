@@ -40,14 +40,14 @@
 
 
     <record id="unit_action" model="ir.actions.act_window">
-            <field name="name">الوحدات</field>
+            <field name="name">Units</field>
             <field name="res_model">unit</field>
     </record>
 
 
     <menuitem
         id="unit_menu_item"
-        name="عرض الوحدات"
+        name="Show Units"
         parent="unit_menu"
         action="unit_action"
     />

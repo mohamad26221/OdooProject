@@ -35,14 +35,14 @@
 
 
     <record id="university_action" model="ir.actions.act_window">
-            <field name="name">الجامعات</field>
+            <field name="name">Universities</field>
             <field name="res_model">university</field>
     </record>
 
 
     <menuitem
         id="university_menu_item"
-        name="عرض الجامعات"
+        name="Show University"
         parent="university_menu"
         action="university_action"
     />

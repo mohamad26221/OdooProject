@@ -3,7 +3,7 @@
     'author': 'Mohamad Ismail',
     'category': 'Uncategorized',
     'version': '17.0.0.1.0',
-    'depends': ['base','sale_management','account'],
+    'depends': ['base','sale_management','account','mail'],
     'data': [
         'security/ir.model.access.csv',
         'views/base_menu.xml',

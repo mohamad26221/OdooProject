@@ -2,13 +2,14 @@ from odoo import  models , fields
 
 class University (models.Model):
     _name = 'university'
-    _description = 'University Description'
+    _description = 'University'
 
-    name = fields.Char(required=True, default='جامعة',string="اسم الجامعة")
+    name = fields.Char(required=True)
+    active = fields.Boolean(default=True)
     city= fields.Selection([
-        ('tartous','طرطوس'),
-        ('lattakia','اللاذقية'),
-        ('homs','حمص'),
-        ('damascous','دمشق'),
-        ('aleepo','حلب'),
-        ],string="المدينة")
+        ('tartous','Tartous'),
+        ('lattakia','Lattakia'),
+        ('homs','Homs'),
+        ('damascous','Damascous'),
+        ('aleepo','Aleepo'),
+        ])
