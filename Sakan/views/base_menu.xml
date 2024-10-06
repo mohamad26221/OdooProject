@@ -25,6 +25,11 @@
          name="الطلاب"
          parent="base_menu"
     />
+    <menuitem
+         id="register_menu"
+         name="طلبات التسجيل"
+         parent="base_menu"
+    />
 
 
 </odoo>

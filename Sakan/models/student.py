@@ -7,10 +7,10 @@ class Student(models.Model):
     _inherit = ['mail.thread','mail.activity.mixin']
 
     name = fields.Char(required=True)
-    email = fields.Char(required=True)
+    email = fields.Char()
     father_name = fields.Char()
     last_name = fields.Char()
-    phone = fields.Char(required=True)
+    phone = fields.Char()
     section = fields.Char()
     birthday = fields.Date(tracking=True)
     unit= fields.Many2one('unit')
@@ -20,10 +20,7 @@ class Student(models.Model):
     StudentStudy_ids= fields.One2many('student.study','student_id')
     city = fields.Selection(related='university.city')
     active = fields.Boolean(default=True)
-    state= fields.Selection([
-        ('accepted','Accepted'),
-        ('rejected','Rejected'),
-        ],default='accepted')
+    register_ids = fields.One2many('register','student_id')
 
     _sql_constraints = [
         ('unique_name','unique("email")','the email is exist!'),
@@ -32,7 +29,7 @@ class Student(models.Model):
     @api.constrains('room')
     def _check_room_capacity(self):
         for student in self:
-            if student.room and len(student.room.student_ids) > 3:
+            if student.room and len(student.room.student_ids) > 3 :
                 raise exceptions.ValidationError("Room is full")
 
 class StudentStudy(models.Model):

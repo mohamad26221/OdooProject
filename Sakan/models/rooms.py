@@ -13,6 +13,7 @@ class Rooms (models.Model):
         ('empty','Empty'),
         ('available','Available'),
         ('full','Full'),
+        ('broken','Broken'),
         ])
     unit = fields.Many2one('unit')
     student_ids = fields.One2many('student', 'room')
@@ -22,9 +23,7 @@ class Rooms (models.Model):
     def _compute_student_count(self):
         for room in self:
             room.student_count = len(room.student_ids)
-            if room.student_count == 0:
-                room.state = 'empty'
-            elif 0 < room.student_count < 3:
+            if 0 < room.student_count < 3:
                 room.state = 'available'
             elif room.student_count >= 3:
                 room.state = 'full'
@@ -36,5 +35,7 @@ class Rooms (models.Model):
             students = self.env['student'].search([('room', '=', rec.id)])
             for student in students:
                 student.room = False
-
+    def action_broken(self):
+        for rec in self:
+            rec.state = 'broken'
 

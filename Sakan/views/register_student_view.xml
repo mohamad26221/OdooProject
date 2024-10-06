@@ -1,0 +1,108 @@
+<odoo>
+
+
+    <record id="register_view_tree" model="ir.ui.view">
+        <field name="name">register view tree</field>
+        <field name="model">register</field>
+        <field name="arch" type="xml">
+            <tree class="header_custom" decoration-danger="(is_late)">
+                <field name="name"/>
+                <field name="unit"/>
+                <field name="is_late" invisible="True"/>
+                <field name="room"/>
+                <field name="state"/>
+                <field name="payment_method"/>
+                <field name="is_late"/>
+            </tree>
+        </field>
+    </record>
+
+    =
+    <record id="register_view_form" model="ir.ui.view">
+        <field name="name">register view form</field>
+        <field name="model">register</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <div class="oe_title">
+                        <label for="number"/>
+                        <h1>
+                            <field name="number"/>
+                        </h1>
+                        <label for="name"/>
+                        <h3>
+                            <field name="student_id"/>
+                        </h3>
+                    </div>
+                    <group>
+
+                        <group>
+                            <field name="name"/>
+                            <field name="unit"/>
+                            <field name="room"/>
+                            <field name="front_face"/>
+                            <field name="back_face"/>
+                            <field name="face_picture"/>
+                        </group>
+
+                        <group>
+                            <field name="university"/>
+                            <field name="payment_method"/>
+                            <field name="is_late" invisible="True"/>
+                        </group>
+
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="register_view_search" model="ir.ui.view">
+        <field name="name">register view search</field>
+        <field name="model">register</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+
+                <filter name="group_unit" string="Unit" context="{'group_by':'unit'}"/>
+                <filter name="group_university" string="University" context="{'group_by':'university'}"/>
+                <filter name="group_room" string="Room" context="{'group_by':'room'}"/>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="register_action" model="ir.actions.act_window">
+        <field name="name">registers</field>
+        <field name="res_model">register</field>
+    </record>
+
+    <record id="check_payment" model="ir.cron">
+        <field name="name">register: Check Payment</field>
+        <field name="model_id" ref="model_register"/>
+        <field name="state">code</field>
+        <field name="code">model.check_expected_payment()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+
+
+    <menuitem
+            id="register_menu_item"
+            name="Show register"
+            parent="register_menu"
+            action="register_action"
+    />
+
+
+</odoo>
