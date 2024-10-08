@@ -22,6 +22,9 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+
+                    <widget name="web_ribbon" title="Broken" bg_color="text-bg-danger" attrs="{'invisible': [('state', '!=', 'broken')]}"/>
+                    <widget name="web_ribbon" title="Available" bg_color="text-bg-success" attrs="{'invisible': [('state', '!=', 'available')]}"/>
                     <header>
                         <button name="action_empty" type="object" class="btn_success" string="Empty Room"
                                 attrs="{'invisible': [('state', '=', 'empty')]}"/>
@@ -62,6 +65,18 @@
 
         <field name="code">
             action = records.action_broken()
+        </field>
+    </record>
+
+
+    <record id="room_change_state_action" model="ir.actions.server">
+        <field name="name">change State</field>
+        <field name="model_id" ref="model_rooms"/>
+        <field name="binding_model_id" ref="model_rooms"/>
+        <field name="state">code</field>
+
+        <field name="code">
+            action = records.action_open_change_state_wizard()
         </field>
     </record>
 

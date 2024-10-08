@@ -27,7 +27,7 @@
                         </h1>
                     </div>
                     <group>
-                        <group string="معلومات الوحدة">
+                        <group string="Info Unit">
                             <field name="type"/>
                             <field name="university"/>
                         </group>

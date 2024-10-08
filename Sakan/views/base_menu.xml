@@ -3,33 +3,34 @@
 
     <menuitem
          id="base_menu"
-         name="السكن الجامعي"
+         name="Sakan"
     />
     <menuitem
          id="university_menu"
-         name="الجامعات"
+         name="University"
          parent="base_menu"
     />
     <menuitem
          id="unit_menu"
-         name="الوحدات"
+         name="Units"
          parent="base_menu"
     />
     <menuitem
          id="room_menu"
-         name="الغرف السكنية"
+         name="Rooms"
          parent="base_menu"
     />
     <menuitem
          id="student_menu"
-         name="الطلاب"
+         name="Student"
          parent="base_menu"
     />
     <menuitem
          id="register_menu"
-         name="طلبات التسجيل"
+         name="Register Request"
          parent="base_menu"
-    />
 
+    />
+<!--groups="Sakan.Sakan_manager_group"-->
 
 </odoo>

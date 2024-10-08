@@ -6,6 +6,7 @@
     'depends': ['base','sale_management','account','mail'],
     'data': [
         'security/ir.model.access.csv',
+        'security/security.xml',
         'data/sequence.xml',
         'views/base_menu.xml',
         'views/university_view.xml',
@@ -14,6 +15,8 @@
         'views/student_view.xml',
         'views/sale_order_view.xml',
         'views/register_student_view.xml',
+        'views/room_history.xml',
+        'wizard/change_state_wizard_view.xml',
         'reports/student_report.xml',
     ],
     'installable': True,
