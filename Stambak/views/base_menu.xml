@@ -1,0 +1,9 @@
+<odoo>
+
+
+    <menuitem id="menu_stampak_root"
+              name="Stampak"
+    />
+
+
+</odoo>

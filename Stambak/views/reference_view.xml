@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <record id="view_reference_tree" model="ir.ui.view">
+            <field name="name">Reference Tree</field>
+            <field name="model">reference</field>
+            <field name="arch" type="xml">
+                <tree string="References" editable="bottom">
+                    <field name="test_id" />
+                    <field name="age_group"/>
+                    <field name="mean_score"/>
+                    <field name="std_deviation"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_reference_form" model="ir.ui.view">
+            <field name="name">Reference Form</field>
+            <field name="model">reference</field>
+            <field name="arch" type="xml">
+                <form string="Reference">
+                    <group>
+                        <field name="test_id" options="{'no_create': True}"/>
+                        <field name="age_group"/>
+                        <field name="mean_score"/>
+                        <field name="std_deviation"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_reference" model="ir.actions.act_window">
+            <field name="name">References</field>
+            <field name="res_model">reference</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_reference_tree"/>
+        </record>
+
+
+        <menuitem id="menu_reference"
+                  name="References"
+                  parent="menu_stampak_root"
+                  action="action_reference"
+
+        />
+    </data>
+</odoo>

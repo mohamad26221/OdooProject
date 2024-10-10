@@ -1,0 +1,44 @@
+<odoo>
+
+
+    <record id="view_children_tree" model="ir.ui.view">
+        <field name="name">Children Tree</field>
+        <field name="model">children</field>
+        <field name="arch" type="xml">
+            <tree string="Children">
+                <field name="name"/>
+                <field name="birthdate"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_children_form" model="ir.ui.view">
+        <field name="name">Children Form</field>
+        <field name="model">children</field>
+        <field name="arch" type="xml">
+            <form string="Children">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="birthdate"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_children" model="ir.actions.act_window">
+        <field name="name">Children</field>
+        <field name="res_model">children</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_stampak_children"
+              name="Children"
+              parent="menu_stampak_root"
+              action="action_children"
+    />
+
+</odoo>

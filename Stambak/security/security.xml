@@ -1,0 +1,11 @@
+<odoo>
+    <record id="group_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+
+    <record id="group_parents" model="res.groups">
+        <field name="name">Parents</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+    </record>
+</odoo>

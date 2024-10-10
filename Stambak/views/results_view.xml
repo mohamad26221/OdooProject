@@ -1,0 +1,84 @@
+<odoo>
+
+
+    <record id="view_results_tree" model="ir.ui.view">
+        <field name="name">Results Tree</field>
+        <field name="model">results</field>
+        <field name="arch" type="xml">
+            <tree string="Results">
+                <field name="child_id"/>
+                <field name="test_id"/>
+                <field name="raw_score"/>
+                <field name="child_age"/>
+                <field name="calculated_score"/>
+                <field name="category"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_results_form" model="ir.ui.view">
+        <field name="name">Results Form</field>
+        <field name="model">results</field>
+        <field name="arch" type="xml">
+            <form string="Results">
+                <sheet>
+                    <group>
+                        <field name="child_id"/>
+                        <field name="test_id"/>
+                        <field name="child_age" readonly="1"/>
+                        <field name="raw_score"/>
+                    </group>
+                    <button name="action_show_result_popup" type="object" string="Show Result"
+                            class="btn-primary"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="results_view_search" model="ir.ui.view">
+        <field name="name">results view search</field>
+        <field name="model">results</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="child_id"/>
+                <field name="child_age"/>
+
+                <filter name="group_state" string="Category" context="{'group_by':'category'}"/>
+            </search>
+        </field>
+    </record>
+
+
+
+    <record id="view_results_popup_form" model="ir.ui.view">
+        <field name="name">Results Popup Form</field>
+        <field name="model">results</field>
+        <field name="arch" type="xml">
+            <form string="Result Details">
+                <sheet>
+                    <group>
+                        <field name="calculated_score" readonly="1"/>
+                        <field name="category" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_results" model="ir.actions.act_window">
+        <field name="name">Results</field>
+        <field name="res_model">results</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_stampak_results"
+              name="Results"
+              parent="menu_stampak_root"
+              action="action_results"
+
+    />
+
+
+</odoo>

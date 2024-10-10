@@ -1,0 +1,306 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Stambak
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-10 15:19+0000\n"
+"PO-Revision-Date: 2024-10-10 15:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Stambak
+#: model:ir.model.fields.selection,name:Stambak.selection__results__category__above
+msgid "Above the normal"
+msgstr "فوق المعدل الطبيعي"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_reference__age_group
+msgid "Age Group"
+msgstr "فئة العمر"
+
+#. module: Stambak
+#: model:ir.model.fields.selection,name:Stambak.selection__results__category__below
+msgid "Below the normal"
+msgstr "تحت المعدل الطبيعي"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__birthdate
+msgid "Birthdate"
+msgstr "تاريخ الميلاد"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__calculated_score
+msgid "Calculated Score"
+msgstr "الدرجة المحسوبة"
+
+#. module: Stambak
+#: model_terms:ir.ui.view,arch_db:Stambak.view_excel_import_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__category
+#: model_terms:ir.ui.view,arch_db:Stambak.results_view_search
+msgid "Category"
+msgstr "نتيجة التصنيف"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__child_id
+msgid "Child"
+msgstr "طفل"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__child_age
+msgid "Child Age"
+msgstr "عمر الطفل"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__name
+msgid "Child Name"
+msgstr "اسم الطفل"
+
+#. module: Stambak
+#: model:ir.actions.act_window,name:Stambak.action_children
+#: model:ir.model,name:Stambak.model_children
+#: model:ir.ui.menu,name:Stambak.menu_stampak_children
+#: model_terms:ir.ui.view,arch_db:Stambak.view_children_form
+#: model_terms:ir.ui.view,arch_db:Stambak.view_children_tree
+msgid "Children"
+msgstr "الأطفال"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__created_at
+#: model:ir.model.fields,field_description:Stambak.field_reference__created_at
+#: model:ir.model.fields,field_description:Stambak.field_results__created_at
+#: model:ir.model.fields,field_description:Stambak.field_tests__created_at
+msgid "Created At"
+msgstr "تم الإنشاء في"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__create_uid
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__create_uid
+#: model:ir.model.fields,field_description:Stambak.field_reference__create_uid
+#: model:ir.model.fields,field_description:Stambak.field_results__create_uid
+#: model:ir.model.fields,field_description:Stambak.field_tests__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__create_date
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__create_date
+#: model:ir.model.fields,field_description:Stambak.field_reference__create_date
+#: model:ir.model.fields,field_description:Stambak.field_results__create_date
+#: model:ir.model.fields,field_description:Stambak.field_tests__create_date
+msgid "Created on"
+msgstr "تم الإنشاء في"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: Stambak
+#: model:ir.model.fields.selection,name:Stambak.selection__results__category__difficulty
+msgid "Difficulty limits"
+msgstr "حدود الصعوبة"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__display_name
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__display_name
+#: model:ir.model.fields,field_description:Stambak.field_reference__display_name
+#: model:ir.model.fields,field_description:Stambak.field_results__display_name
+#: model:ir.model.fields,field_description:Stambak.field_tests__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__file
+msgid "Excel File"
+msgstr "ملف Excel"
+
+#. module: Stambak
+#: model:ir.model,name:Stambak.model_excel_import
+msgid "Excel Import"
+msgstr "استيراد Excel"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__filename
+msgid "Filename"
+msgstr "اسم الملف"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__id
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__id
+#: model:ir.model.fields,field_description:Stambak.field_reference__id
+#: model:ir.model.fields,field_description:Stambak.field_results__id
+#: model:ir.model.fields,field_description:Stambak.field_tests__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: Stambak
+#: model_terms:ir.ui.view,arch_db:Stambak.view_excel_import_form
+msgid "Import"
+msgstr "استيراد"
+
+#. module: Stambak
+#: model:ir.actions.act_window,name:Stambak.action_excel_import
+#: model:ir.ui.menu,name:Stambak.menu_excel_import
+msgid "Import Excel"
+msgstr "استيراد Excel"
+
+#. module: Stambak
+#: model_terms:ir.ui.view,arch_db:Stambak.view_excel_import_form
+msgid "Import Excel Data"
+msgstr "استيراد بيانات Excel"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children____last_update
+#: model:ir.model.fields,field_description:Stambak.field_excel_import____last_update
+#: model:ir.model.fields,field_description:Stambak.field_reference____last_update
+#: model:ir.model.fields,field_description:Stambak.field_results____last_update
+#: model:ir.model.fields,field_description:Stambak.field_tests____last_update
+msgid "Last Modified on"
+msgstr "تم التعديل آخر مرة في"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__write_uid
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__write_uid
+#: model:ir.model.fields,field_description:Stambak.field_reference__write_uid
+#: model:ir.model.fields,field_description:Stambak.field_results__write_uid
+#: model:ir.model.fields,field_description:Stambak.field_tests__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_children__write_date
+#: model:ir.model.fields,field_description:Stambak.field_excel_import__write_date
+#: model:ir.model.fields,field_description:Stambak.field_reference__write_date
+#: model:ir.model.fields,field_description:Stambak.field_results__write_date
+#: model:ir.model.fields,field_description:Stambak.field_tests__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_reference__mean_score
+msgid "Mean Score"
+msgstr "الدرجة المتوسطة"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__raw_score
+msgid "Raw Score"
+msgstr "الدرجة الخام"
+
+#. module: Stambak
+#: model:ir.model,name:Stambak.model_reference
+#: model_terms:ir.ui.view,arch_db:Stambak.view_reference_form
+msgid "Reference"
+msgstr "المرجع"
+
+
+#. module: Stambak
+#: model:ir.actions.act_window,name:Stambak.action_reference
+#: model:ir.ui.menu,name:Stambak.menu_reference
+#: model_terms:ir.ui.view,arch_db:Stambak.view_reference_tree
+msgid "References"
+msgstr "الجدول المرجعي"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_reference__test_id
+msgid "Test ID"
+msgstr "معرف الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_results__test_id
+msgid "Test Name"
+msgstr "اسم الاختبار"
+
+#. module: Stambak
+#: model:ir.model,name:Stambak.model_results
+#: model_terms:ir.ui.view,arch_db:Stambak.view_results_form
+#: model_terms:ir.ui.view,arch_db:Stambak.view_results_tree
+msgid "Results"
+msgstr "النتائج"
+
+
+#. module: Stambak
+#: model_terms:ir.ui.view,arch_db:Stambak.view_results_form
+msgid "Show Result"
+msgstr "عرض النتيجة"
+
+#. module: Stambak
+#: model:ir.ui.menu,name:Stambak.menu_stampak_root
+msgid "Stampak"
+msgstr "اختبار ستامباك"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_reference__std_deviation
+msgid "Standard Deviation"
+msgstr "الانحراف المعياري"
+
+
+#. module: Stambak
+#: model:ir.model.fields.selection,name:Stambak.selection__results__category__within
+msgid "Within the normal"
+msgstr "ضمن المعدل الطبيعي"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_reference__test_id
+#: model:ir.model.fields,field_description:Stambak.field_results__test_id
+msgid "Test"
+msgstr "الاختبار:"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__title
+msgid "Test Title"
+msgstr "عنوان الاختبار"
+
+#. module: Stambak
+#: model:ir.model,name:Stambak.model_tests
+#: model:ir.ui.menu,name:Stambak.menu_stampak_tests
+#: model_terms:ir.ui.view,arch_db:Stambak.view_tests_form
+#: model_terms:ir.ui.view,arch_db:Stambak.view_tests_tree
+msgid "Tests"
+msgstr "الاختبارات"
+
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__type
+msgid "Test Type"
+msgstr "نوع الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields.selection,name:Stambak.selection__results__category__age
+msgid "Test Type for Age"
+msgstr "نوع الاختبار حسب العمر"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__category
+msgid "Test Category"
+msgstr "فئة الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__result_ids
+msgid "Test Results"
+msgstr "نتائج الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__score
+msgid "Test Score"
+msgstr "درجة الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__test_date
+msgid "Test Date"
+msgstr "تاريخ الاختبار"
+
+#. module: Stambak
+#: model:ir.model.fields,field_description:Stambak.field_tests__id
+msgid "Test ID"
+msgstr "معرف الاختبار"
