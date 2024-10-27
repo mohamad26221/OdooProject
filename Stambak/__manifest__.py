@@ -1,20 +1,31 @@
 {
     'name': 'Stambak',
     'author': 'Mohamad Ismail',
-    'category': 'Uncategorized',
+    'category': 'project',
     'version': '17.0.0.1.0',
-    'depends': ['base'],
+    'depends': ['base','web','sale','board','sale_timesheet','project','sale_management'],
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',
         'views/base_menu.xml',
+        'views/sales_dashboard.xml',
         'views/children_view.xml',
         'views/tests_view.xml',
         'views/results_view.xml',
         'views/excel_import_view.xml',
         'views/reference_view.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'Stambak/static/src/lib/chart_main.js',
+            'Stambak/static/src/js/sales_dashboard.js',
+            'Stambak/static/src/js/helper.js',
+            'Stambak/static/src/css/sales_dashboard.css',
+            'Stambak/static/src/xml/sales_dashboard.xml',
+        ],
+    },
+    'images': [],
     'installable': True,
-    'application': True,
-    'license': 'LGPL-3'
+    'application': False,
+    'auto_install': False,
 }

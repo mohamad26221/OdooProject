@@ -4,4 +4,5 @@ Stambak.access_results_manager,access_results,Stambak.model_results,,1,1,1,1
 Stambak.access_tests_manager,access_tests,Stambak.model_tests,,1,1,1,1
 Stambak.access_reference_manager,access_reference,Stambak.model_reference,,1,1,1,1
 Stambak.access_excel_import_manager,access_excel_import,Stambak.model_excel_import,,1,1,1,1
+Stambak.access_project_project,access_project_project,Stambak.model_project_project,,1,1,1,1
 
