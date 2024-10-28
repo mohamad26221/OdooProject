@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_sale_order_form_inherit_customer_count" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.customer.count</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="customer_purchase_count" readonly="1" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+

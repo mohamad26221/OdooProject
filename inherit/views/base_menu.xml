@@ -1,0 +1,9 @@
+<odoo>
+
+
+    <menuitem id="menu_inherit_root"
+              name="Inherit"
+    />
+
+
+</odoo>
